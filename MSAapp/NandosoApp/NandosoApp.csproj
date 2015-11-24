@@ -134,9 +134,11 @@
     <None Include="Properties\PublishProfiles\acasnandoso - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\acasnandoso - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
-    <Content Include="index.html" />
+    <Content Include="HTML Pages\feedbackPage.html" />
+    <Content Include="HTML Pages\index.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\index.html" />
     <Content Include="Scripts\index.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
