@@ -9,6 +9,7 @@ namespace MSAapp.Models
 {
     public class MSAappContext : DbContext
     {
+        [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))] 
         public class MyConfiguration : DbMigrationsConfiguration<MSAappContext>
         {
             public MyConfiguration()
@@ -48,6 +49,7 @@ namespace MSAapp.Models
 
         public MSAappContext() : base("name=MSAappContext")
         {
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<MSAappContext, MyConfiguration>());
         }
 
         public System.Data.Entity.DbSet<MSAapp.Models.Special> Specials { get; set; }
