@@ -139,9 +139,13 @@
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="HTML Pages\feedbackPage.html" />
     <Content Include="HTML Pages\index.html" />
+    <Content Include="images\african-safari.jpg" />
+    <Content Include="images\chicken-salad.jpg" />
     <Content Include="index.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="chatPage.html" />
+    <Content Include="Scripts\index.css" />
     <Content Include="Scripts\index.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
