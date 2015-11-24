@@ -12,44 +12,44 @@ using NandosoApp.Models;
 
 namespace NandosoApp.Controllers
 {
-    public class FeedbacksController : ApiController
+    public class FeedbackCommentsController : ApiController
     {
         private NandosoAppContext db = new NandosoAppContext();
 
-        // GET: api/Feedbacks
-        public IQueryable<Feedback> GetFeedbacks()
+        // GET: api/FeedbackComments
+        public IQueryable<FeedbackComment> GetFeedbackComments()
         {
-            return db.Feedbacks;
+            return db.FeedbackComments;
         }
 
-        // GET: api/Feedbacks/5
-        [ResponseType(typeof(Feedback))]
-        public IHttpActionResult GetFeedback(int id)
+        // GET: api/FeedbackComments/5
+        [ResponseType(typeof(FeedbackComment))]
+        public IHttpActionResult GetFeedbackComment(int id)
         {
-            Feedback feedback = db.Feedbacks.Find(id);
-            if (feedback == null)
+            FeedbackComment feedbackComment = db.FeedbackComments.Find(id);
+            if (feedbackComment == null)
             {
                 return NotFound();
             }
 
-            return Ok(feedback);
+            return Ok(feedbackComment);
         }
 
-        // PUT: api/Feedbacks/5
+        // PUT: api/FeedbackComments/5
         [ResponseType(typeof(void))]
-        public IHttpActionResult PutFeedback(int id, Feedback feedback)
+        public IHttpActionResult PutFeedbackComment(int id, FeedbackComment feedbackComment)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            if (id != feedback.ID)
+            if (id != feedbackComment.FeedbackCommentID)
             {
                 return BadRequest();
             }
 
-            db.Entry(feedback).State = EntityState.Modified;
+            db.Entry(feedbackComment).State = EntityState.Modified;
 
             try
             {
@@ -57,7 +57,7 @@ namespace NandosoApp.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!FeedbackExists(id))
+                if (!FeedbackCommentExists(id))
                 {
                     return NotFound();
                 }
@@ -70,35 +70,35 @@ namespace NandosoApp.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
-        // POST: api/Feedbacks
-        [ResponseType(typeof(Feedback))]
-        public IHttpActionResult PostFeedback(Feedback feedback)
+        // POST: api/FeedbackComments
+        [ResponseType(typeof(FeedbackComment))]
+        public IHttpActionResult PostFeedbackComment(FeedbackComment feedbackComment)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            db.Feedbacks.Add(feedback);
+            db.FeedbackComments.Add(feedbackComment);
             db.SaveChanges();
 
-            return CreatedAtRoute("DefaultApi", new { id = feedback.ID }, feedback);
+            return CreatedAtRoute("DefaultApi", new { id = feedbackComment.FeedbackCommentID }, feedbackComment);
         }
 
-        // DELETE: api/Feedbacks/5
-        [ResponseType(typeof(Feedback))]
-        public IHttpActionResult DeleteFeedback(int id)
+        // DELETE: api/FeedbackComments/5
+        [ResponseType(typeof(FeedbackComment))]
+        public IHttpActionResult DeleteFeedbackComment(int id)
         {
-            Feedback feedback = db.Feedbacks.Find(id);
-            if (feedback == null)
+            FeedbackComment feedbackComment = db.FeedbackComments.Find(id);
+            if (feedbackComment == null)
             {
                 return NotFound();
             }
 
-            db.Feedbacks.Remove(feedback);
+            db.FeedbackComments.Remove(feedbackComment);
             db.SaveChanges();
 
-            return Ok(feedback);
+            return Ok(feedbackComment);
         }
 
         protected override void Dispose(bool disposing)
@@ -110,9 +110,9 @@ namespace NandosoApp.Controllers
             base.Dispose(disposing);
         }
 
-        private bool FeedbackExists(int id)
+        private bool FeedbackCommentExists(int id)
         {
-            return db.Feedbacks.Count(e => e.ID == id) > 0;
+            return db.FeedbackComments.Count(e => e.FeedbackCommentID == id) > 0;
         }
     }
 }

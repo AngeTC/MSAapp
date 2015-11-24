@@ -121,6 +121,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="feedbackPage.html" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -130,30 +131,35 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Properties\PublishProfiles\acasnandoso - FTP %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\acasnandoso - FTP %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\acasnandoso - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\acasnandoso - Web Deploy %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\acasnandoso - Web Deploy %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\acasnandoso - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="HTML Pages\feedbackPage.html" />
     <Content Include="HTML Pages\index.html" />
+    <Content Include="index.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\index.html" />
     <Content Include="Scripts\index.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\FeedbackModule.js" />
     <Content Include="Scripts\SpecialModule.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\FeedbacksController.cs" />
+    <Compile Include="Controllers\FeedbackCommentsController.cs" />
+    <Compile Include="Controllers\FeedbackPostsController.cs" />
     <Compile Include="Controllers\SpecialsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Feedback.cs" />
+    <Compile Include="Models\FeedbackComment.cs" />
+    <Compile Include="Models\FeedbackPost.cs" />
     <Compile Include="Models\NandosoAppContext.cs" />
     <Compile Include="Models\Special.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,13 +1,23 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Nandoso Home Page</title>
+    <title>Nandoso - Feedback</title>
     <meta charset="utf-8" />
     <script src="../Scripts/jquery-1.9.1.min.js"></script>
     <script src="../Scripts/bootstrap.min.js"></script>
     <link href="../Content/bootstrap.css" rel="stylesheet" />
     <script src="../Scripts/index.js"></script>
-    <script src="../Scripts/SpecialModule.js"></script> 
+    <script src="../Scripts/FeedbackModule.js"></script>
+    
+    <script type="text/javascript">
+        function submitFeedback() {
+            var feedback = {
+                email: document.getElementById("email").value,
+                content: document.getElementById("content").value
+            };
+            alert(feedback[0]);
+        }
+    </script> 
 </head>
 <body>
     <div class="container">
@@ -38,12 +48,13 @@
 
         <div class="form-group">
             <label for="usr">E-mail:</label>
-            <input type="text" class="form-control" id="usr">
+            <input type="text" class="form-control" id="email">
         </div>
         <div class="form-group">
             <label for="comment">Your Feedback:</label>
-            <textarea class="form-control" rows="5" id="comment"></textarea>
+            <textarea class="form-control" rows="5" id="feedback"></textarea>
         </div>
+        <button type="button" onclick="submitFeedback();">Submit</button>
     </div>
 </body>
 </html>
