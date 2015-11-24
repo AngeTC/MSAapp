@@ -22,15 +22,15 @@ function loadSpecials() {
 
             // Add the columns in the row (td / data cells)
             var specialNameCol = document.createElement('td');
-            specialNameCol.innerHTML = specials[i].surname;
+            specialNameCol.innerHTML = specials[i].specialName;
             row.appendChild(specialNameCol);
 
             var specialDescCol = document.createElement('td');
-            specialDescCol.innerHTML = specials[i].name;
+            specialDescCol.innerHTML = specials[i].specialDesc;
             row.appendChild(specialDescCol);
 
             var specialPriceCol = document.createElement('td');
-            specialPriceCol.innerHTML = specials[i].country;
+            specialPriceCol.innerHTML = specials[i].specialPrice;
             row.appendChild(specialPriceCol);
 
             // Append the row to the end of the table

@@ -4,8 +4,8 @@
         getSpecials: function (callback) {
             $.ajax({
                 type: "GET",
-                dataType: "jsonp",
-                url: "http://api.uinames.com/?amount=25",
+                dataType: "json",
+                url: "https://acasnandoso.azurewebsites.net/api/Specials",
                 success: function (data) {
                     console.log(data);
                     callback(data);
