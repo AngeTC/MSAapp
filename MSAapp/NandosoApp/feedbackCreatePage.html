@@ -11,7 +11,11 @@
 
     <script type="text/javascript">
         function createNewPost() {
-            FeedbackPostModule.addFeedbackComments(document.getElementById("name").value, document.getElementById("comment").value);
+            if (document.getElementById("name").value === null || document.getElementById("comment").value === null) {
+                FeedbackPostModule.addFeedbackComments(document.getElementById("name").value, document.getElementById("comment").value);
+            } else {
+                alert("Please fill in all fields before posting.");
+            }
         }
     </script>
 </head>
@@ -54,7 +58,7 @@
             </div>
         </div>
         <div class="row">
-            <button type="button" class="btn btn-lg homepageBtn col-xs-6 col-xs-offset-3" onclick="createNewPost();">Confirm</button>
+            <button type="button" class="btn btn-default btn-lg homepageBtn col-xs-6 col-xs-offset-3" onclick="createNewPost();">Confirm</button>
         </div>
     </div>
 </body>

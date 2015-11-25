@@ -29,7 +29,7 @@
         $("#fakeLoader").fakeLoader({
             timeToHide: 1000,       // Animation lasts 1000 ms
             zIndex: 999,            // Make sure that the loader is always on top of any other elements
-            spinner: "spinner3",    // Change spinner animation
+            spinner: "spinner7",    // Change spinner animation
             bgColor: "#ff6600"      // Custom background colour
         });
     </script>
@@ -57,16 +57,17 @@
             </div>
         </nav>
 
-        <div class="col-md-12 text-center">
-            <h2>Welcome to Nandoso's Feedback forums!</h2>
-            <h4>Please feel free to leave a post, and we'll get back to you as soon as possible!</h4>
-        </div>
-
         <!-- Comments -->
         <div class="panel panel-default">
             <div class="panel-heading">
-                <div class="col-md-offset-10">
-                    <button type="button" onclick="location.href = 'feedbackCreatePage.html'" class="btn btn-lg homepageBtn">Add New Post</button>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <h2>Welcome to Nandoso's Feedback forums!</h2>
+                        <h4>Please feel free to leave a post, and we'll get back to you as soon as possible!</h4>
+                    </div>
+                    <div class="col-xs-6">
+                        <button type="button" onclick="location.href = 'feedbackCreatePage.html'" class="btn btn-default btn-lg homepageBtn col-xs-12" style="margin-top: 25px;">Add New Post</button>
+                    </div>
                 </div>
             </div>
             <ul id="comments">
