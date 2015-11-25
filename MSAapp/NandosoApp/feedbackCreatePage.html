@@ -1,38 +1,21 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Nandoso - Live Chat</title>
+    <title>Nandoso - Add Comment</title>
     <meta charset="utf-8" />
     <script src="Scripts/jquery-1.9.1.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
     <link href="Content/bootstrap.css" rel="stylesheet" />
-    <script src="Scripts/index.js"></script>
-    <script src="Scripts/SpecialModule.js"></script>
+    <script src="Scripts/FeedbackPostModule.js"></script>
     <link href="Scripts/index.css" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="Scripts/fakeLoader.css">
+    <script type="text/javascript">
+        function createNewPost() {
+            FeedbackPostModule.addFeedbackComments(document.getElementById("name").value, document.getElementById("comment").value);
+        }
+    </script>
 </head>
 <body>
-    <div id="fakeLoader"></div>
-
-    <!-- Include jQuery, loaded at the bottom to allow content to be loaded
-    first, users won't notice delay caused by loading scrit files-->
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-
-    <!-- Include the fakeLoader.js -->
-    <script src="Scripts/fakeLoader.min.js"></script>
-
-    <!-- Using fakeLoader -->
-    <script type="text/javascript">
-       //$("...") gets whatever.
-        $("#fakeLoader").fakeLoader({
-            timeToHide: 1000,       // Animation lasts 1000 ms
-            zIndex: 999,            // Make sure that the loader is always on top of any other elements
-            spinner: "spinner3",    // Change spinner animation
-            bgColor: "#ff6600"      // Custom background colour
-        });
-    </script>
-
     <div class="container">
         <!-- Nav bar -->
         <nav class="navbar navbar-default navbar-custom">
@@ -56,7 +39,22 @@
             </div>
         </nav>
         <div class="row">
-            <div class="col-md-6 col-md-offset-3"><p class="text-center">CHAT WILL GO HERE</p></div>
+            <h2 class="col-md-8 col-md-offset-2">Add Feedback Comment</h2>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-8 col-md-offset-2">
+                <label for="usr">Name:</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-8 col-md-offset-2">
+                <label for="comment">Comment to Post:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <button type="button" class="btn btn-lg homepageBtn col-xs-6 col-xs-offset-3" onclick="createNewPost();">Confirm</button>
         </div>
     </div>
 </body>

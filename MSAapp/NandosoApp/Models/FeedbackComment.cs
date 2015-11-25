@@ -16,10 +16,10 @@ namespace NandosoApp.Models
         public string poster { get; set; }
         public string comment { get; set; }
 
-        [Key, Column(Order = 2)]
-        public virtual int FeedbackPostID { get; set; }
+        //[Key, Column(Order = 2)]
+        //public virtual int FeedbackPostID { get; set; }
 
-        [JsonIgnore]
-        public virtual FeedbackPost feedbackPost { get; set; }
+        //[JsonIgnore]
+        //public virtual FeedbackPost feedbackPost { get; set; }
     }
 }

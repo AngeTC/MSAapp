@@ -117,6 +117,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="feedbackCreatePage.html" />
+    <Content Include="JCollapsible\arrow-down.png" />
+    <Content Include="JCollapsible\arrow-right.png" />
+    <Content Include="JCollapsible\button.png" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -141,14 +145,19 @@
     <None Include="Properties\PublishProfiles\nandosoapp - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\nandosoapp - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="JCollapsible\gravatar.gif" />
     <Content Include="HTML Pages\feedbackPage.html" />
     <Content Include="HTML Pages\index.html" />
     <Content Include="images\african-safari.jpg" />
     <Content Include="images\chicken-salad.jpg" />
     <Content Include="index.html" />
+    <Content Include="JCollapsible\jCollapsible.js" />
+    <Content Include="JCollapsible\jCollapsible.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="chatPage.html" />
+    <Content Include="Scripts\fakeLoader.css" />
+    <Content Include="Scripts\fakeLoader.min.js" />
     <Content Include="Scripts\feedbackPage.js" />
     <Content Include="Scripts\index.css" />
     <Content Include="Scripts\index.js" />

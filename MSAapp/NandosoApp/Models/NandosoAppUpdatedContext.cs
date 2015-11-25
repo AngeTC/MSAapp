@@ -46,36 +46,26 @@ namespace NandosoApp.Models
                 //Initialise comments information.
                 FeedbackComment c1 = new FeedbackComment
                 {
-                    FeedbackPostID = feedbackPosts.Single(p => p.topic == "New Menu?").FeedbackPostID,
-                    feedbackPost = f1,
                     poster = "Billy",
                     comment = "I've been seeing new items on the menu. Glad to see some more variety!"
                 };
                 FeedbackComment c2 = new FeedbackComment
                 {
-                    FeedbackPostID = feedbackPosts.Single(p => p.topic == "New Menu?").FeedbackPostID,
-                    feedbackPost = f1,
                     poster = "Stella C [Employee]",
                     comment = "Why thank you, Billy! We're happy to see that you are satisfied with the new menu!"
                 };
                 FeedbackComment c3 = new FeedbackComment
                 {
-                    FeedbackPostID = feedbackPosts.Single(p => p.topic == "Prices are getting a bit high.").FeedbackPostID,
-                    feedbackPost = f2,
                     poster = "Disgruntled",
                     comment = "I swear, you guys used to be soooo affordable. But these prices are getting outrageous!"
                 };
                 FeedbackComment c4 = new FeedbackComment
                 {
-                    FeedbackPostID = feedbackPosts.Single(p => p.topic == "Prices are getting a bit high.").FeedbackPostID,
-                    feedbackPost = f2,
                     poster = "Dave",
                     comment = "Agreed, but there are worse out there."
                 };
                 FeedbackComment c5 = new FeedbackComment
                 {
-                    FeedbackPostID = feedbackPosts.Single(p => p.topic == "Prices are getting a bit high.").FeedbackPostID,
-                    feedbackPost = f2,
                     poster = "Taylor Day [Employee]",
                     comment = "We're sorry to hear that our prices have not met your standards. Have you seen our recent specials, sir? Perhaps you may be interested in those?"
                 };
