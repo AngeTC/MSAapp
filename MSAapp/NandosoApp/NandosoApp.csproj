@@ -207,6 +207,8 @@
     <Compile Include="Models\NandosoAppUpdatedContext.cs" />
     <Compile Include="Models\Special.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignalR\ChatHub.cs" />
+    <Compile Include="SignalR\Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
