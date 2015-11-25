@@ -14,7 +14,7 @@ namespace NandosoApp.Controllers
 {
     public class FeedbackPostsController : ApiController
     {
-        private NandosoAppContext db = new NandosoAppContext();
+        private NandosoAppUpdatedContext db = new NandosoAppUpdatedContext();
 
         // GET: api/FeedbackPosts
         public IQueryable<FeedbackPost> GetFeedbackPosts()

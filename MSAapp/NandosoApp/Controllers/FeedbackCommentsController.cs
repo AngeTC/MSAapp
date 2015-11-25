@@ -14,7 +14,7 @@ namespace NandosoApp.Controllers
 {
     public class FeedbackCommentsController : ApiController
     {
-        private NandosoAppContext db = new NandosoAppContext();
+        private NandosoAppUpdatedContext db = new NandosoAppUpdatedContext();
 
         // GET: api/FeedbackComments
         public IQueryable<FeedbackComment> GetFeedbackComments()
@@ -80,7 +80,22 @@ namespace NandosoApp.Controllers
             }
 
             db.FeedbackComments.Add(feedbackComment);
-            db.SaveChanges();
+
+            try
+            {
+                db.SaveChanges();
+            }
+            catch (DbUpdateException)
+            {
+                if (FeedbackCommentExists(feedbackComment.FeedbackCommentID))
+                {
+                    return Conflict();
+                }
+                else
+                {
+                    throw;
+                }
+            }
 
             return CreatedAtRoute("DefaultApi", new { id = feedbackComment.FeedbackCommentID }, feedbackComment);
         }

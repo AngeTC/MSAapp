@@ -14,7 +14,7 @@ namespace NandosoApp.Controllers
 {
     public class SpecialsController : ApiController
     {
-        private NandosoAppContext db = new NandosoAppContext();
+        private NandosoAppUpdatedContext db = new NandosoAppUpdatedContext();
 
         // GET: api/Specials
         public IQueryable<Special> GetSpecials()

@@ -136,6 +136,10 @@
     <None Include="Properties\PublishProfiles\acasnandoso - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\acasnandoso - Web Deploy %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\acasnandoso - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\nandosoacas - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\nandosoacas - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\nandosoapp - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\nandosoapp - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="HTML Pages\feedbackPage.html" />
     <Content Include="HTML Pages\index.html" />
@@ -145,11 +149,12 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="chatPage.html" />
+    <Content Include="Scripts\feedbackPage.js" />
     <Content Include="Scripts\index.css" />
     <Content Include="Scripts\index.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
-    <Content Include="Scripts\FeedbackModule.js" />
+    <Content Include="Scripts\FeedbackPostModule.js" />
     <Content Include="Scripts\SpecialModule.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -164,7 +169,7 @@
     </Compile>
     <Compile Include="Models\FeedbackComment.cs" />
     <Compile Include="Models\FeedbackPost.cs" />
-    <Compile Include="Models\NandosoAppContext.cs" />
+    <Compile Include="Models\NandosoAppUpdatedContext.cs" />
     <Compile Include="Models\Special.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
