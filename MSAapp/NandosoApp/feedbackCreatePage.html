@@ -11,10 +11,10 @@
 
     <script type="text/javascript">
         function createNewPost() {
-            if (document.getElementById("name").value === null || document.getElementById("comment").value === null) {
-                FeedbackPostModule.addFeedbackComments(document.getElementById("name").value, document.getElementById("comment").value);
-            } else {
+            if (document.getElementById("name").value === "" || document.getElementById("comment").value === "") {
                 alert("Please fill in all fields before posting.");
+            } else {
+                FeedbackPostModule.addFeedbackComments(document.getElementById("name").value, document.getElementById("comment").value);
             }
         }
     </script>
@@ -37,6 +37,7 @@
                         <li class="active"><a href="index.html">Home</a></li>
                         <li class="active navlink"><a href="">Our Menu</a></li>
                         <li class="active"><a href="">About Us</a></li>
+                        <li class="active"><a href="chatPage.html">Live Chat</a></li>
                         <li class="active"><a href="feedbackPage.html">Give Us Feedback</a></li>
                     </ul>
                 </div>

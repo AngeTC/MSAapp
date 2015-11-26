@@ -142,6 +142,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="feedbackCreatePage.html" />
+    <Content Include="images\food-dome.png" />
+    <Content Include="images\customer.png" />
     <Content Include="JCollapsible\arrow-down.png" />
     <Content Include="JCollapsible\arrow-right.png" />
     <Content Include="JCollapsible\button.png" />
